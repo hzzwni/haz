@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ms">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Nur Hazwani | About</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+        <nav class="navbar">
+            <!-- BUTANG HAMBURGER (Dah diselaras dengan page lain) -->
+            <button class="hamburger-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- SIDEBAR MENU -->
+            <div class="nav-buttons" id="navMenu">
+                <a href="index.html" class="btn-nav">HOME</a>
+                <a href="about.html" class="btn-nav active">ABOUT</a>
+                <a href="myportfolio.html" class="btn-nav">PORTFOLIO</a>
+                <a href="#contact" class="btn-nav">CONTACT</a>
+            </div>
+            
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+        </nav>
+    
+    </div>
+	
+    <div class="about-section-wrapper">
+        <div class="about-page-header">
+            <h1 class="main-title-about">About Me</h1>
+        </div>
+                
+        <div class="about-tabs-menu">
+            <button class="tab-link active" data-tab="sec-01">01 Biography</button>
+            <button class="tab-link" data-tab="sec-02">02 Education & Extra-curricular</button>
+            <button class="tab-link" data-tab="sec-03">03 Experience & Achievement</button>
+            <button class="tab-link" data-tab="sec-04">04 Skills</button>
+        </div>
+
+        <div class="about-dynamic-box">
+            <div id="sec-01" class="about-panel active">
+                <div class="panel-grid-layout">
+                    <div class="panel-left-media">
+                        <div class="image-placeholder-frame">
+                            <img src="img/biography.jpeg" alt="Gambar" class="actual-profile-img" onerror="this.parentElement.classList.add('fallback-sky')">
+                        </div>
+                    </div>
+                    <div class="panel-right-info">
+                        <h2 class="panel-content-title">01 Biography</h2>
+                        <div class="panel-text-lines">
+                            <p>Hi! My name is <strong>An Nur Hazwani</strong>, and people call me Wani. I'm from Setapak, Kuala Lumpur. I’m currently studying Digital Media Communication Technology at UiTM Alor Gajah, Melaka, and I’ve always had a huge passion for <strong>content creation</strong> and <strong>digital marketing</strong>. What I love most is mixing creative ideas with technical skills to make visual content that actually catches people’s attention.</p>
+                            <p>I’m an easygoing and reliable person, which makes it easy for me to fit into any team, though I can also work just fine on my own. When I need a break from screen time, I usually turn to baking or hitting a hiking trail to connect with nature. I’m also deeply into photography, and snapping random photos of things around me, especially the sky.</p>
+                        </div>
+                        <div class="panel-action-container">
+                            <div class="button-group">
+                                <a href="https://www.youtube.com/watch?v=CONTOH" target="_blank" class="btn-panel-touch">Click here to watch video resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sec-02" class="about-panel">
+                <div class="tab02-combined-wrapper">
+                    <div class="education-section">
+                        <h2 class="sub-section-title">Education</h2>
+                        <div class="education-grid">
+                            <div class="extra-card">
+                                <p><strong>SIJIL PELAJARAN MALAYSIA</strong></p>
+                                <p>SMK Padang Tembak, Kuala Lumpur<br>2019-2023</p>
+                            </div>
+                            <div class="extra-card">
+                                <p><strong>DIPLOMA IN DIGITAL MEDIA COMMUNICATION TECHNOLOGY</strong></p>
+                                <p>UiTM Cawangan Melaka, Kampus Alor Gajah<br>2024-Present</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="extracurricular-section">
+                        <h2 class="sub-section-title">Extra-curricular</h2>
+                        <div class="extra-grid-layout">
+                            <div class="extra-card"><p><strong>Exhibitor & Presenter</strong></p><p>Our Digitalization Journey Showcase BYOD Programme (District-level)</p><p>2022</p></div>
+                            <div class="extra-card"><p><strong>Exhibitor & Presenter</strong></p><p>Persidangan STEM: JPWPKL-UPM Serdang</p><p>2023</p></div>
+                            <div class="extra-card"><p><strong>Exhibitor & Presenter </strong></p><p>Pameran Reka Bentuk Grafik Digital SMK Padang Tembak</p><p>2023</p></div>
+                            <div class="extra-card"><p><strong>Junior Crew Bureau of Photo & Video</strong></p><p>Beta Fiesta 1.0</p><p>2024</p></div>
+                            <div class="extra-card"><p><strong>Participant</strong></p><p>Bubble Run MIND X AIG MIND Day Fest</p><p>2025</p></div>
+                            <div class="extra-card"><p><strong>Participant</strong></p><p>Career Talk X FWD MIND Day Fest</p><p>2025</p></div>
+                            <div class="extra-card"><p><strong>Exhibitor</strong></p><p>Light Crafters Showcase</p><p>2025</p></div>
+                            <div class="extra-card"><p><strong>Participant</strong></p><p>Splash Run X Pink Unity</p><p>2026</p></div>
+                            <div class="extra-card"><p><strong>Head of Photo Bureau</strong></p><p>Beta Fiesta 2.0</p><p>2026</p></div>
+                            <div class="extra-card"><p><strong>Participant</strong></p><p>Melaka International Intellectual Exposition 2026 (MIIEx)</p><p>2026</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                       
+            <div id="sec-03" class="about-panel">
+                <div class="tab03-combined-wrapper">
+                    <h2 class="panel-main-title-center">Work Experience</h2>
+                    <div class="extra-grid-layout">
+                        <div class="extra-card clickable-card" data-img="img/work2.jpeg">
+                            <p><strong>Event crew-Usher</strong></p>
+                          <span class="card-subtitle"><strong>International Conference of Religious Leaders 2024</strong></span>
+                            <p>Guided and directed international attendees to their respective halls and assisted them with any inquiries throughout the event.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work6.jpeg">
+                            <p><strong>Event Crew- Usher & Registration Crew</strong></p>
+                             <span class="card-subtitle"><strong>International Beauty Expo 2024</strong></span>
+                            <p>Managed the registration counter by keying in visitors' details and issuing entry passes. Ensured a smooth and organized check-in process for all attendees.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work1.jpeg">
+                            <p><strong>Part Time Sales Assistant</strong></p>
+                            <span class="card-subtitle"><strong>Daisy Nana @ Central Market</strong></span>
+                            <p>Assisted customers, managed product displays, and handled daily sales. Learned how to communicate effectively with all kinds of people, especially tourists.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work7.jpeg">
+                            <p><strong>Freelance Photographer</strong></p>
+                             <span class="card-subtitle"><strong>2024-Present</strong></span>
+                            <p>Taking photos for events and portraits, focusing on good lighting and clean shots. Handled the process from shooting to final photo editing based on what the client needed.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work11.jpeg">
+                            <p><strong>Event Crew- Usher & Registration Crew</strong></p>
+                             <span class="card-subtitle"><strong>21st Malaysian Cardiovascular Interventional Symposium 2025</strong></span>
+                            <p>Managed the entrance by scanning attendees' QR passes before medical professionals entered the symposium halls. Ensured a smooth and secure access control for all participants.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work9.jpeg">
+                            <p><strong>Registration Crew</strong></p>
+                             <span class="card-subtitle"><strong>THP Chinese New Year Celebration @ Kota Semarak Galleria 2025</strong></p>
+                            <p>Assisted with visitor registration by keying in their details and guiding them to scan the event QR code. Also managed the distribution of festive goodie bags to all attendees.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work4.jpeg">
+                            <p><strong>Personal Assistant for Production</strong></p>
+                             <span class="card-subtitle"><strong>Aku Pilih Pelangi for Viu Malaysia 2026</strong></span>
+                            <p>Helped the production team on set with unloading equipment and checking lighting setups. Also in charge of putting clip-on mics on the talents and testing the sound before shoots.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work5.jpeg">
+                            <p><strong>Personal Assistant for Production</strong></p>
+                             <span class="card-subtitle"><strong>Hening Cinta for ViU Malaysia 2026</strong></span>
+                            <p>Helped the production team on set with unloading equipment and checking lighting setups. Also in charge of putting clip-on mics on the talents and testing the sound before shoots.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work8.jpeg">
+                            <p><strong>Personal Assistant for Production</strong></p>
+                            <span class="card-subtitle"><strong>Cinta Dalam Sekam for ViU Malaysia2026</strong></span>
+                            <p>Helped the production team on set with unloading equipment and checking lighting setups. Also in charge of putting clip-on mics on the talents and testing the sound before shoots.</p>
+                        </div>
+                        <div class="extra-card clickable-card" data-img="img/work10.jpeg">
+							  <p><strong>Personal Assistant for Production</strong></p>
+                            <span class="card-subtitle"><strong>Together Gather at LRT- Viu Malaysia Ramadan Event 2026</strong></span>
+                            <p>Helped the production team on set with unloading equipment and checking lighting setups. Also in charge of putting clip-on mics on the talents and testing the sound before shoots.</p>
+                        </div>
+                    </div>
+                
+                    <div class="achievement-section-wrapper">
+                        <h3 class="sub-section-title">Achievements</h3>
+                        <div class="achievement-window-grid">
+                            <div class="window-card">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <div class="window-info" style="padding: 45px 15px; text-align: center;">
+                                        <h4 style="margin-bottom: 8px; font-size: 0.95rem;">Dean's List Semester 1</h4>
+                                        <p style="font-size: 0.8rem;">GPA: 3.87</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="window-card">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <div class="window-info" style="padding: 45px 15px; text-align: center;">
+                                        <h4 style="margin-bottom: 8px; font-size: 0.95rem;">Dean's List Semester 2</h4>
+                                        <p style="font-size: 0.8rem;">GPA: 3.67</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="window-card">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <div class="window-info" style="padding: 45px 15px; text-align: center;">
+                                        <h4 style="margin-bottom: 8px; font-size: 0.95rem;">Dean's List Semester 3</h4>
+                                        <p style="font-size: 0.8rem;">GPA: 3.68</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="window-card clickable-card" data-img="img/cert5.jpeg">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <img src="img/cert5.jpeg" alt="MIIEx" class="window-img">
+                                    <div class="window-info">
+                                        <h4>Certificate of Appreciation</h4>
+                                        <p>Crew Photo/Video Beta Fiesta 1.0 • 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+							
+                            <div class="window-card clickable-card" data-img="img/cert_1.jpg">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <img src="img/cert_1.jpg" alt="Silver Aard" class="window-img">
+                                    <div class="window-info">
+                                        <h4>Silver Award</h4>
+                                        <p>Melaka International Intellectual Exposition (MIIEx) • 2026</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="window-card clickable-card" data-img="img/ecert2.jpg">
+                                <div class="window-header">
+                                    <span class="window-title"></span>
+                                    <div class="window-dots">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                </div>
+                                <div class="window-body">
+                                    <img src="img/ecert2.jpg" alt="e-Latih" class="window-img">
+                                    <div class="window-info">
+                                        <h4>Certified HRD-Corp e-LATIH</h4>
+                                        <p>Social Media Marketing • 2026</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                       
+            <div id="sec-04" class="about-panel">
+                <h2 class="skills-main-title">Soft Skills</h2>
+                <div class="skills-grid" style="margin-bottom: 50px;">
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo1.png" alt="Communication Skills"></div>
+                        <h3>Communication Skills</h3>
+                        <p>Possesses strong communication skills, with the ability to convey information clearly and connect professionally with others.</p>
+                    </div>
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo2.png" alt="Teamwork"></div>
+                        <h3>Teamwork</h3>
+                        <p>Ready to collaborate openly, share constructive feedback, and support peers to hit collective project goals.</p>
+                    </div>
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo3.png" alt="Time Management"></div>
+                        <h3>Time Management</h3>
+                        <p>Skilled at prioritizing tasks and structuring daily workflows to deliver high-quality outcomes before the deadline.</p>
+                    </div>
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo4.png" alt="Emotional Intelligence"></div>
+                        <h3>Emotional Intelligence</h3>
+                        <p>Adept at active listening, understanding team dynamics, and navigating high-pressure environments with a mature and positive mindset.</p>
+                    </div>
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo6.png" alt="Adaptability"></div>
+                        <h3>Adaptability</h3>
+                        <p>Highly adaptive in fast-moving settings, with a strong readiness to learn new skills, accept constructive feedback, and embrace digital changes.</p>
+                    </div>
+                    <div class="skill-card soft-skill-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo5.png" alt="AI Literacy"></div>
+                        <h3>Ai Literacy</h3>
+                        <p>Proficient in leveraging modern AI tools to streamline content creation workflows, boost productivity, and optimize digital marketing strategies.</p>
+                    </div>
+                </div>
+
+                <h2 class="skills-main-title">Software Skills</h2>
+                <div class="skills-grid software-grid">
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo7.png" alt="Adobe Photoshop"></div>
+                        <h3>Adobe Photoshop</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo17.png" alt="Adobe Illustrator"></div>
+                        <h3>Adobe Illustrator</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo8.png" alt="Adobe Premiere Pro"></div>
+                        <h3>Adobe Premiere Pro</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo11.png" alt="Adobe After Effects"></div>
+                        <h3>Adobe After Effects</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo12.png" alt="Adobe Lightroom"></div>
+                        <h3>Adobe Lightroom</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo13.png" alt="Figma"></div>
+                        <h3>Figma</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo18.png" alt="3D Blender"></div>
+                        <h3>3D Blender</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo9.png" alt="Unreal Engine"></div>
+                        <h3>Unreal Engine</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo15.png" alt="DaVinci Resolve"></div>
+                        <h3>DaVinci Resolve</h3>
+                        <p class="status-level">Beginner</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo10.png" alt="CapCut"></div>
+                        <h3>CapCut</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo16.png" alt="Canva"></div>
+                        <h3>Canva</h3>
+                        <p class="status-level">Intermediate</p>
+                    </div>
+                    <div class="skill-card tech-compact-card">
+                        <div class="skill-icon-box"><img src="img/skillslogo14.png" alt="Google Analytics"></div>
+                        <h3>Google Analytics</h3>
+                        <p class="status-level">Beginner</p>
+                    </div>
+                </div>
+				
+			
+<!-- Languages -->
+    <h2 class="skills-main-title">Languages</h2>
+    <div class="skills-grid software-grid">
+        <div class="skill-card tech-compact-card">
+            <!-- Sila pastikan anda letak ikon bahasa yang betul -->
+            <div class="skill-icon-box"><img src="img/language1.png" alt="Malay"></div>
+            <h3>Malay</h3>
+            <p class="status-level">Native or Bilingual Proficiency</p>
+        </div>
+        <div class="skill-card tech-compact-card">
+            <div class="skill-icon-box"><img src="img/language1.png" alt="English"></div>
+            <h3>English</h3>
+            <p class="status-level">Professional Working Proficiency</p>
+        </div>
+		        <div class="skill-card tech-compact-card">
+            <div class="skill-icon-box"><img src="img/language2.png" alt="Jawi"></div>
+            <h3>Jawi Script</h3>
+            <p class="status-level">Full Professional Proficiency</p>
+        </div>
+    </div>
+</div>
+			
+			
+				
+            </div> </div> </div> <div id="about-image-modal" class="modal">
+        <span class="close-btn" id="modal-close-trigger">&times;</span>
+        <img class="modal-content" id="modal-target-img" src="" alt="Bukti Pengalaman">
+    </div>
+
+
+	
+	
+	
+	
+	<section class="contact-section" id="contact">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">Got a cool project or an event coming up? Let’s chat!</p>
+    
+    <!-- Form Hubungi yang Berfungsi -->
+    <form class="contact-form-box" id="my-contact-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="text" name="contact" placeholder="Your email or phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send" id="submit-btn">Send</button>
+        
+        <!-- Ruang status mesej -->
+        <div id="form-status" style="margin-top: 15px; text-align: center; color: #ffffff; font-weight: bold; font-size: 14px;"></div>
+    </form>
+</section>
+
+<!-- SEKSYEN FOOTER MINIMALIS BARU (URUTAN: EMAIL, IG, LINKEDIN, TIKTOK) -->
+<footer class="footer-section">
+    <div class="footer-socials">
+        <!-- 1. Email -->
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annurhazwani24@gmail.com&tf=cm" class="footer-icon-link" target="_blank">
+            <img src="img/logo_gmail.png" alt="Gmail">
+        </a>
+        
+        <!-- 2. Instagram -->
+        <a href="https://www.instagram.com/hz.wni?utm_source=qr" class="footer-icon-link" target="_blank">
+            <img src="img/logo_ig.png" alt="Instagram">
+        </a>
+        
+        <!-- 3. LinkedIn -->
+        <a href="https://www.linkedin.com/in/an-nur-hazwani-95766136b" class="footer-icon-link" target="_blank">
+            <img src="img/logo_linkedin.png" alt="LinkedIn">
+        </a>
+        
+        <!-- 4. TikTok -->
+        <a href="https://www.tiktok.com/@hz.wni?_r=1&_t=ZS-97iURQG54NR" class="footer-icon-link" target="_blank">
+            <img src="img/logo_tiktok.png" alt="TikTok">
+        </a>
+    </div>
+
+    <!-- Teks Copyright -->
+    <p>&copy; 2026 An Nur Hazwani. All Rights Reserved.</p>
+</footer>
+	
+	
+	
+	
+	<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+	
+    <script src="js/about.js"></script>
+</body>
+</html>
+									
+									
+							
+
+
+
+	

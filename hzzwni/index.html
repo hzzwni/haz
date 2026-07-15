@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>An Nur Hazwani | Home</title>
+	
+	<!-- Hubungkan ke fail CSS luaran -->
+<link rel="stylesheet" href="css/home.css">
+
+	 <!-- SEKSYEN PERTAMA: HOME / HERO (Maroon) -->
+    <div class="portfolio-container">
+      <nav class="navbar">
+    <!-- 1. Butang Hamburger (Sebelah Kiri) -->
+    <button class="hamburger-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- 2. Menu Navigasi (Tengah/Bawah bila dibuka) -->
+    <div class="nav-buttons" id="navMenu">
+        <a href="index.html" class="btn-nav">HOME</a>
+        <a href="about.html" class="btn-nav">ABOUT</a>
+        <a href="myportfolio.html" class="btn-nav">PORTFOLIO</a>
+        <a href="#contact" class="btn-nav">CONTACT</a>
+    </div>
+
+    <!-- 3. Logo (Sebelah Kanan) -->
+    <img src="img/logo.png" alt="Logo" class="logo-img">
+</nav>
+
+		
+		
+		
+<main class="main-content">
+    
+    <!-- Semua teks disatukan di sebelah kiri -->
+    <div class="hero-text-section">
+        <p class="greeting">HI, I'M</p>
+     <h1 class="name">
+    AN NUR 
+    <div>
+        <span class="highlight">HAZWANI</span><span class="cursor">|</span>
+    </div>
+</h1>
+        <!-- BAHAGIAN BARU: Tagline Spesifik -->
+    <div class="hero-tags">
+        <span>Content Creator</span> | <span>Digital Marketer</span> | <span>Photographer</span>
+    </div>
+		
+		
+		
+		
+        <!-- Teks description kau sekarang dah tak ada box putih, duduk bawah nama -->
+        <p class="hero-description">A Digital Media Communication Technology student specializing in content creation and photography, mixing creative ideas with strategic design to transform concepts into impactful digital stories.</p>
+        
+        <a href="#about" class="btn-more" style="text-decoration: none; display: inline-block; text-align: center;">More about me</a>
+    </div>
+
+    <!-- Gambar kekal di sebelah kanan -->
+    <div class="content-right">
+        <div class="stamp-frame profile-box">
+            <img src="img/homeprofilepic.png" alt="Gambar" class="profile-img">
+        </div>
+    </div>
+    
+</main>
+    
+	
+	  <!-- SEKSYEN KEDUA: MY PORTFOLIO (Sesuai Rujukan image_a0f89e.png) -->
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">My Portfolio</h2>
+        
+        <div class="portfolio-grid">
+            
+            <!-- Kad 1: Designs -->
+            <a href="myportfolio.html#designs" class="window-card">
+                <div class="window-header">
+                    <span class="window-tab">Design</span>
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="img/design.png" alt="Designs" class="portfolio-img-placeholder">
+                </div>
+            </a>
+
+            <!-- Kad 2: Photography -->
+            <a href="myportfolio.html#photography" class="window-card"> 
+                <div class="window-header">
+                    <span class="window-tab">Photography</span>
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="img/photography.png" alt="Photography" class="portfolio-img-placeholder">
+                </div>
+            </a>
+
+            <!-- Kad 3: Trends -->
+            <a href="myportfolio.html#trends" class="window-card"> 
+                <div class="window-header">
+                    <span class="window-tab">Trends</span>
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="img/trends.png" alt="Trends" class="portfolio-img-placeholder">
+                </div>
+            </a>
+
+            <!-- Kad 4: Real Client (BARU) -->
+            <a href="myportfolio.html#realclient" class="window-card"> 
+                <div class="window-header">
+                    <span class="window-tab">Real-Client</span>
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <!-- Ganti src di bawah dengan gambar preview projek client kau -->
+                    <img src="img/realclient.png" alt="Real Client" class="portfolio-img-placeholder">
+                </div>
+            </a>
+
+            <!-- Kad 5: Game (BARU) -->
+            <a href="myportfolio.html#game" class="window-card"> 
+                <div class="window-header">
+                    <span class="window-tab">Project</span>
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot green"></span>
+                        <span class="dot yellow"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <!-- Ganti src di bawah dengan gambar preview projek game kau -->
+                    <img src="img/project.png" alt="Game" class="portfolio-img-placeholder">
+                </div>
+            </a>
+
+        </div>
+    </section>
+	
+	 <!-- SEKSYEN KETIGA: LEARN MORE ABOUT ME -->
+    <section id="about" class="learn-more-section">
+        <h2 class="learn-more-title">Learn More About Me</h2>
+        
+        <div class="banner-container">
+            <!-- Gantikan 'banner-me.jpg' dengan nama fail gambar banner kau nanti -->
+   <video autoplay loop muted playsinline class="banner-img">
+        <source src="img/video_more.mp4" type="video/mp4"></video>
+            
+            <!-- Butang Click Here di tengah bawah gambar -->
+            <a href="about.html" class="btn-click-here">Click Here</a>
+        </div>
+    </section>
+	
+	
+<section class="contact-section" id="contact">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">Got a cool project or an event coming up? Let’s chat!</p>
+    
+    <!-- Form Hubungi yang Berfungsi -->
+    <form class="contact-form-box" id="my-contact-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="text" name="contact" placeholder="Your email or phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send" id="submit-btn">Send</button>
+        
+        <!-- Ruang status mesej -->
+        <div id="form-status" style="margin-top: 15px; text-align: center; color: #ffffff; font-weight: bold; font-size: 14px;"></div>
+    </form>
+</section>
+
+<!-- SEKSYEN FOOTER MINIMALIS BARU (URUTAN: EMAIL, IG, LINKEDIN, TIKTOK) -->
+<footer class="footer-section">
+    <div class="footer-socials">
+        <!-- 1. Email -->
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annurhazwani24@gmail.com&tf=cm" class="footer-icon-link" target="_blank">
+            <img src="img/logo_gmail.png" alt="Gmail">
+        </a>
+        
+        <!-- 2. Instagram -->
+        <a href="https://www.instagram.com/hz.wni?utm_source=qr" class="footer-icon-link" target="_blank">
+            <img src="img/logo_ig.png" alt="Instagram">
+        </a>
+        
+        <!-- 3. LinkedIn -->
+        <a href="https://www.linkedin.com/in/an-nur-hazwani-95766136b" class="footer-icon-link" target="_blank">
+            <img src="img/logo_linkedin.png" alt="LinkedIn">
+        </a>
+        
+        <!-- 4. TikTok -->
+        <a href="https://www.tiktok.com/@hz.wni?_r=1&_t=ZS-97iURQG54NR" class="footer-icon-link" target="_blank">
+            <img src="img/logo_tiktok.png" alt="TikTok">
+        </a>
+    </div>
+
+    <!-- Teks Copyright -->
+    <p>&copy; 2026 An Nur Hazwani. All Rights Reserved.</p>
+</footer>
+		
+		
+			<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+		
+    <!-- Hubungkan ke fail JavaScript luaran -->
+    <script src="js/home.js"></script>
+
+
+</html>
+	
+
+
+
+
+
+</body>
+
