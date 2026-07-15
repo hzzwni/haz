@@ -1,0 +1,796 @@
+<!doctype html>
+<html>
+<head>
+<html lang="ms">
+<head>
+    <meta charset="utf-8">
+    <!-- Penting untuk paparan mobile yang responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>An Nur Hazwani | My Portfolio</title>
+    <!-- Hubungkan ke fail CSS luaran -->
+    <link rel="stylesheet" href="css/myportfolio.css">
+</head>
+<body>
+	
+    <!-- SEKSYEN PERTAMA: HOME / HERO (Maroon) -->
+    <div class="portfolio-container">
+        <nav class="navbar">
+            
+            <!-- 1. Butang Hamburger (Sebelah Kiri) -->
+            <button class="hamburger-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+		  
+            <!-- 2. Menu Link Desktop/Mobile (Ditambah id="navMenu" supaya sepadan dengan JS) -->
+            <div class="nav-buttons" id="navMenu">
+                <a href="index.html" class="btn-nav">HOME</a>
+                <a href="about.html" class="btn-nav">ABOUT</a>
+                <a href="myportfolio.html" class="btn-nav active">PORTFOLIO</a>
+                <a href="#contact" class="btn-nav">CONTACT</a>
+            </div>
+
+            <!-- 3. Logo dikekalkan di bawah sekali supaya dia duduk belah kanan -->
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            
+        </nav>
+    </div>
+
+    <main class="portfolio-page">
+        <h1 class="page-title">My <span>Portfolio</span></h1>
+
+        <nav class="portfolio-tabs">
+            <a href="javascript:void(0)" class="tab-link active" onclick="bukaTab(event, 'designs')">Design</a>
+            <a href="javascript:void(0)" class="tab-link" onclick="bukaTab(event, 'photography')">Photography</a>
+            <a href="javascript:void(0)" class="tab-link" onclick="bukaTab(event, 'trends')">Trends</a>
+            <a href="javascript:void(0)" class="tab-link" onclick="bukaTab(event, 'realclient')">Real-Client</a>
+            <a href="javascript:void(0)" class="tab-link" onclick="bukaTab(event, 'game')">Project</a>
+        </nav>
+
+        <!-- SEKSYEN DESIGN -->
+        <section id="designs" class="gallery-section active-section">
+            <h2 class="section-subtitle">Design</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design1.jpg" alt="Peel Fresh" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p>Peel Fresh Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design6.png" alt="The Invisible Ninja" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p>Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design2.png" alt="Yazoo" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p>Yazoo Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design3.jpg" alt="Chagee decode" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p>Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design4.jpg" alt="Chagee Discount" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p>Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design5.png" alt="Chagee" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p>Poster Design</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design8.png" alt="Hideout Isometric" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Illustrator</h3><p>Hideout Isometric</p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/design7.png" alt="Audi" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Illustrator</h3><p>Content Poster Design</p></div>
+                </div>
+            </div> 
+        </section>
+				
+        <!-- SEKSYEN PHOTOGRAPHY -->
+        <section id="photography" class="gallery-section">
+            <h2 class="section-subtitle">Photography</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo3.jpeg" alt="Titiwangsa" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo14.jpeg" alt="Chowkit" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo10.jpeg" alt="Bunga 1" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo12.jpeg" alt="Bukit bintang" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo6.jpeg" alt="Macro" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo9.jpeg" alt="Pantai" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo8.jpeg" alt="Bunga putih" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on iPhone</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo5.jpeg" alt="Sawah padi" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on iPhone</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo13.jpeg" alt="Haidar" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on iPhone</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo4.jpeg" alt="macro" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo2.jpeg" alt="bracelet" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Sony</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/photo1.jpeg" alt="sunset" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Shoot on Kodak</h3><p> </p></div>
+                </div>
+            </div> 
+        </section>
+		
+        <!-- SEKSYEN TRENDS -->
+        <section id="trends" class="gallery-section">
+            <h2 class="section-subtitle">Trends</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend7.png" alt="Artwork 1" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>	
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend6.png" alt="Artwork 2" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p></p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend5.png" alt="Artwork 3" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend4.png" alt="Artwork 4" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend9.png" alt="Artwork 5" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend3.png" alt="Artwork 6" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend2.png" alt="Artwork 7" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Canva</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend1.jpg" alt="Artwork 8" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p> </p></div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="card-window-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="image-container"><img src="img/trend8.jpg" alt="Artwork 9" onclick="besarkanGambar(this)" style="cursor: pointer;"></div>
+                    <div class="card-details"><h3>Adobe Photoshop</h3><p> </p></div>
+                </div>
+            </div> 
+        </section>
+
+<!-- SEKSYEN REAL-CLIENT -->
+<section id="realclient" class="gallery-section active-section">
+    <h2 class="section-subtitle">Real-Client</h2>
+    <div class="portfolio-grid">
+        
+        <!-- Kad 1: Imej -->
+        <div class="portfolio-card">
+            <div class="card-window-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="image-container">
+                <img src="img/rc2.png" alt="Client Work 1" onclick="besarkanGambar(this)" style="cursor: pointer;">
+            </div>
+            <div class="card-details">
+                <h3>Mr.Abdul Azis | PHS Autohaus | Group Project</h3>
+                <p>Digital Campaign Proposal</p>
+            </div>
+        </div>
+
+        <!-- Kad 2: Imej -->
+        <div class="portfolio-card">
+            <div class="card-window-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="image-container">
+                <img src="img/rc1.PNG" alt="Client Work 2" onclick="besarkanGambar(this)" style="cursor: pointer;">
+            </div>
+            <div class="card-details">
+                <h3>Mr.Abdul Azis | PHS Autohaus | Group Project</h3>
+                <p>Digital Campaign Report</p>
+            </div>
+        </div>
+
+   
+		
+		
+<!-- Kad 3: Video TikTok dengan Overlay -->
+<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <!-- Wrapper Video dengan Thumbnail -->
+<div class="card-video-wrapper">
+    <iframe 
+        src="https://www.tiktok.com/player/v1/7588382604462837012?music_info=0&description=0" 
+        allow="fullscreen" 
+        style="width: 100%; height: 200px; border: none; object-fit: cover;">
+    </iframe>
+</div>
+
+    <div class="card-details">
+        <h3>Mr.Abdul Azis | PHS Autohaus</h3>
+        <p>Video Content: Volkswagen GTI MK8.5</p>
+    </div>
+</div>
+		
+		
+		<!-- Kad 4: Video TikTok 2 (Audi Q7) -->
+<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <iframe 
+            src="https://www.tiktok.com/player/v1/7591007307253697812?music_info=0&description=0" 
+            allow="fullscreen" 
+            style="width: 100%; height: 200px; border: none; object-fit: cover;">
+        </iframe>
+    </div>
+
+    <div class="card-details">
+        <h3>Mr.Abdul Azis | PHS Autohaus</h3>
+        <p>Video Content: Audi Q7 S line</p>
+    </div>
+</div>
+		
+		
+		
+		
+<!-- Kad 5: Video TikTok 3 (Audi Q7 CKD) -->
+<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <iframe 
+            src="https://www.tiktok.com/player/v1/7590356741477420309?music_info=0&description=0" 
+            allow="fullscreen" 
+            style="width: 100%; height: 200px; border: none; object-fit: cover;">
+        </iframe>
+    </div>
+
+    <div class="card-details">
+        <h3>Mr.Abdul Azis | PHS Autohaus</h3>
+        <p>Video Content: Audi Q7 S line</p>
+    </div>
+</div>
+		
+		
+		
+		<!-- Kad 6: Video TikTok 4 (Volkswagen Golf GTI Allstar Edition) -->
+<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <iframe 
+            src="https://www.tiktok.com/player/v1/7589672587207265556?music_info=0&description=0" 
+            allow="fullscreen" 
+            style="width: 100%; height: 200px; border: none; object-fit: cover;">
+        </iframe>
+    </div>
+
+    <div class="card-details">
+        <h3>Mr.Abdul Azis | PHS Autohaus</h3>
+        <p>Video Content: Audi Q7 S line</p>
+    </div>
+</div>
+		
+		
+		<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video vIc71pM1_oI -->
+        <a href="https://www.youtube.com/watch?v=vIc71pM1_oI" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="https://img.youtube.com/vi/vIc71pM1_oI/maxresdefault.jpg" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Ahlan Academy | Group Project</h3>
+        <p>Animated Explainer Video</p>
+    </div>
+</div>
+		
+		
+				<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video B0MXcco1N68 -->
+        <a href="https://www.youtube.com/watch?v=B0MXcco1N68" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="https://img.youtube.com/vi/B0MXcco1N68/maxresdefault.jpg" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Warisan Tangan Melaka | Group Project</h3>
+        <p>Documentary</p>
+    </div>
+</div>
+				
+		
+		
+		
+		</section>
+		
+        <!-- SEKSYEN PROJECT -->
+        <section id="game" class="gallery-section">
+            <h2 class="section-subtitle">Project</h2>
+            <div class="portfolio-grid">
+
+	<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video DejZ425ZaRI -->
+        <a href="https://www.youtube.com/watch?v=DejZ425ZaRI" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="https://img.youtube.com/vi/DejZ425ZaRI/maxresdefault.jpg" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Sehari Je di KL? Jom Ikut Kita Orang!</h3>
+        <p>Davinci Resolve</p>
+    </div>
+</div>
+				
+				
+				
+
+<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video TWMhOyaJI4I -->
+        <a href="https://www.youtube.com/watch?v=TWMhOyaJI4I" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="https://img.youtube.com/vi/TWMhOyaJI4I/maxresdefault.jpg" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Animated Explainer Video | BulusCare | Group Project</h3>
+        <p>Adobe Illustrator | After Effects</p>
+    </div>
+</div>
+			
+		
+						<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video 8UBpPBFz7TQ -->
+        <a href="https://www.youtube.com/watch?v=8UBpPBFz7TQ" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="https://img.youtube.com/vi/8UBpPBFz7TQ/maxresdefault.jpg" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>The Cursed Carve | Game Trailer | Group Project</h3>
+        <p>Unreal Engine | CapCut</p>
+    </div>
+</div>
+				
+		
+				<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Ganti ID video di bawah: cUA7RBeMtsQ atau vIc71pM1_oI -->
+        <a href="https://www.youtube.com/watch?v=cUA7RBeMtsQ" target="_blank">
+            <img src="https://img.youtube.com/vi/cUA7RBeMtsQ/maxresdefault.jpg" 
+                 alt="Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Social Media Infographic </h3>
+        <p>After Effects</p>
+    </div>
+</div>
+				
+			<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video v1dMho0U5pM -->
+        <a href="https://www.youtube.com/watch?v=v1dMho0U5pM" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="img/project4.png" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>5 Animation Principle</h3>
+        <p>After Effects</p>
+    </div>
+</div>
+			
+				
+				
+				<div class="portfolio-card">
+    <div class="card-window-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    </div>
+    
+    <div class="card-video-wrapper">
+        <!-- Link YouTube untuk video vGQH3obT2rg -->
+        <a href="https://www.youtube.com/watch?v=vGQH3obT2rg" target="_blank">
+            <!-- Thumbnail kualiti HD -->
+            <img src="img/project3.png" 
+                 alt="Video Thumbnail" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+            
+            <!-- Butang Play Merah Ikonik -->
+            <div class="play-button-red">▶</div>
+        </a>
+    </div>
+
+    <div class="card-details">
+        <h3>Dream House</h3>
+        <p>Unreal Engine 5</p>
+    </div>
+</div>
+				
+				
+				
+		
+				
+				       <!-- Kad 1: Imej -->
+        <div class="portfolio-card">
+            <div class="card-window-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="image-container">
+                <img src="img/project1.png" alt="Boolat" onclick="besarkanGambar(this)" style="cursor: pointer;">
+            </div>
+            <div class="card-details">
+                <h3>Image Render: Boolat</h3>
+                <p>3D Blender</p>
+            </div>
+        </div>
+				
+							       <!-- Kad 1: Imej -->
+        <div class="portfolio-card">
+            <div class="card-window-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="image-container">
+                <img src="img/project5.png" alt="Trophy" onclick="besarkanGambar(this)" style="cursor: pointer;">
+            </div>
+            <div class="card-details">
+                <h3>Image Render: Trophy</h3>
+                <p>3D Blender</p>
+            </div>
+        </div>	
+			
+				
+        </section>
+    </main>
+	
+    <!-- STRUKTUR MODAL YANG BETUL (Ditambah event untuk fungsi tutup baru) -->
+    <div id="imageModal" class="modal" onclick="tutupGambar(event)">
+        <span class="close-btn" onclick="tutupGambar(event)">&times;</span>
+        <img class="modal-content" id="imgExpanded" alt="Zoomed View">
+    </div>
+
+
+	
+	
+		
+	<section class="contact-section" id="contact">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-subtitle">Got a cool project or an event coming up? Let’s chat!</p>
+    
+    <!-- Form Hubungi yang Berfungsi -->
+    <form class="contact-form-box" id="my-contact-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="text" name="contact" placeholder="Your email or phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-send" id="submit-btn">Send</button>
+        
+        <!-- Ruang status mesej -->
+        <div id="form-status" style="margin-top: 15px; text-align: center; color: #ffffff; font-weight: bold; font-size: 14px;"></div>
+    </form>
+</section>
+
+	
+	
+<!-- SEKSYEN FOOTER MINIMALIS BARU (URUTAN: EMAIL, IG, LINKEDIN, TIKTOK) -->
+<footer class="footer-section">
+    <div class="footer-socials">
+        <!-- 1. Email -->
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=annurhazwani24@gmail.com&tf=cm" class="footer-icon-link" target="_blank">
+            <img src="img/logo_gmail.png" alt="Gmail">
+        </a>
+        
+        <!-- 2. Instagram -->
+        <a href="https://www.instagram.com/hz.wni?utm_source=qr" class="footer-icon-link" target="_blank">
+            <img src="img/logo_ig.png" alt="Instagram">
+        </a>
+        
+        <!-- 3. LinkedIn -->
+        <a href="https://www.linkedin.com/in/an-nur-hazwani-95766136b" class="footer-icon-link" target="_blank">
+            <img src="img/logo_linkedin.png" alt="LinkedIn">
+        </a>
+        
+        <!-- 4. TikTok -->
+        <a href="https://www.tiktok.com/@hz.wni?_r=1&_t=ZS-97iURQG54NR" class="footer-icon-link" target="_blank">
+            <img src="img/logo_tiktok.png" alt="TikTok">
+        </a>
+    </div>
+
+    <!-- Teks Copyright -->
+    <p>&copy; 2026 An Nur Hazwani. All Rights Reserved.</p>
+</footer>
+	
+	
+	
+	
+
+
+  <script>
+        // --- 1. KOD UNTUK HAMBURGER MENU ---
+        const menuToggle = document.getElementById('mobile-menu');
+        const navButtons = document.querySelector('.nav-buttons');
+
+        if (menuToggle && navButtons) {
+            menuToggle.addEventListener('click', () => {
+                navButtons.classList.toggle('active');
+            });
+        }
+
+        // --- 2. KOD BARU UNTUK TUKAR TAB PORTFOLIO ---
+        function bukaTab(evt, tabName) {
+            var i, x, tablinks;
+            
+            // 1. Sorokkan semua seksyen gambar portfolio
+            x = document.getElementsByClassName("gallery-section");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.setProperty('display', 'none', 'important');
+                x[i].classList.remove("active-section");
+            }
+            
+            // 2. Buang status aktif warna merah daripada semua butang tab
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // 3. Paparkan seksyen yang dipilih mengikut susunan grid asal anda
+            const tabTerpilih = document.getElementById(tabName);
+            if (tabTerpilih) {
+                tabTerpilih.style.setProperty('display', 'grid', 'important'); 
+                tabTerpilih.classList.add("active-section");
+            } else {
+                console.error("ID '" + tabName + "' tidak dijumpai. Sila semak fail HTML.");
+            }
+            
+            // 4. Setkan butang tab yang diklik menjadi aktif
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Auto-klik tab pertama (Design) sebaik sahaja halaman selesai dimuatkan
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabPertama = document.querySelector(".tab-link");
+            if (tabPertama) {
+                tabPertama.click();
+            }
+        });
+    </script>
+	
+	
+	
+	
+	<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>	
+	
+	
+			
+    <!-- Hubungkan ke fail JavaScript luaran -->
+    <script src="js/myportfolio.js"></script>
+
+
+		
+		
+<script>
+function playVideo(btn) {
+    const container = btn.parentElement;
+    const embed = container.querySelector('.video-embed');
+    const thumb = container.querySelector('.thumbnail-img');
+    
+    btn.style.display = 'none';
+    thumb.style.display = 'none';
+    embed.style.display = 'block';
+    
+    // Auto play video
+    const iframe = embed.querySelector('iframe');
+    iframe.src += "?autoplay=1";
+}
+</script>
+
+
+</html>		
