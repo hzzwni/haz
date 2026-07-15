@@ -1,0 +1,793 @@
+@charset "UTF-8";
+
+/* =======================================================
+   0. DAFTAR FONT FUTURA SECARA LOKAL
+   ======================================================= */
+@font-face {
+    font-family: 'FuturaCustom'; 
+    src: url('../fonts/NamaFailFontFuturaKau.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* =======================================================
+   1. RESET ASAS & UTAMA (BODY)
+   ======================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', sans-serif !important; 
+}
+
+body {
+    background-color: #4a1515; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+    position: relative; 
+}
+
+/* =======================================================
+   2. SEKSYEN PERTAMA: HOME / HERO (VERSI LOCK TENGAH)
+   ======================================================= */
+.portfolio-container {
+    background-color: #4a1515; 
+    width: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 30px 30px !important; 
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 90% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important; 
+    padding: 0 !important;      
+    box-sizing: border-box !important;
+}
+
+.nav-buttons {
+    display: flex !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+}
+
+.btn-nav {
+    display: inline-block !important;
+    background-color: #CB812D !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    padding: 8px 24px !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    border: 2px solid #CB812D !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+}
+
+.btn-nav:hover {
+    background-color: #ffa43c !important;
+    color: #fff !important;
+}
+
+.logo-img {
+    width: auto !important;          
+    height: 50px !important;        
+    border-radius: 0% !important;   
+    background-color: transparent !important; 
+    object-fit: contain !important; 
+    border: none !important;        
+}
+
+/* =======================================================
+   3. SEKSYEN KEDUA: KANDUNGAN PORTFOLIO (DESIGNS TAB)
+   ======================================================= */
+.portfolio-page {
+    padding: 60px 10% 60px 10%; 
+    text-align: center;
+    background-color: #faf5ee; 
+    flex: 1; 
+}
+
+.portfolio-page .page-title {
+    font-size: 5rem;
+    color: #CB812D;
+    margin-bottom: 10px;
+}
+
+.portfolio-tabs {
+    margin-bottom: 50px;
+    border-bottom: 2px solid #8C1416;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.tab-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.tab-link.active, .tab-link:hover {
+    color: #8C1416;
+    font-weight: bold;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* REKA BENTUK KAD PORTFOLIO */
+.portfolio-card {
+    background-color: #fff;
+    border: 2px solid #4a1515; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(78, 26, 26, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(78, 26, 26, 0.25);
+}
+
+.card-window-bar {
+    background-color: #4a1515; 
+    padding: 8px 12px;
+    display: flex;
+    gap: 6px;
+}
+
+.card-window-bar .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.card-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    overflow: hidden;
+    background-color: #000; 
+}
+
+.card-video-wrapper iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    border: none;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    background-color: #e0ecf4;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .image-container img {
+    transform: scale(1.05); 
+}
+
+.card-details {
+    padding: 15px;
+    text-align: left;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.card-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.card-details p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.image-container-video {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 12px;  
+    border-bottom-right-radius: 12px; 
+}
+
+.image-container-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* =======================================================
+   5. PENGURUSAN GALERI & MODAL POPUP
+   ======================================================= */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.client-link {
+    text-decoration: none; 
+    color: inherit;       
+    display: inline-block;
+}
+
+.client-link:hover h3 {
+    text-decoration: underline; 
+    opacity: 0.8;
+}
+
+.card-video-wrapper {
+    width: 100%;
+    height: 200px; /* Samakan dengan tinggi image-container anda */
+    overflow: hidden; /* Ini kunci utama: potong bahagian luar */
+    position: relative;
+    background-color: #000;
+}
+
+.card-video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: auto;
+    /* Kita besarkan sedikit (scale 1.1) supaya scrollbar TikTok 'terkeluar' dari kawasan potongan */
+    transform: scale(1.15); 
+    transform-origin: center;
+}
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.play-button-red {
+    width: 70px;
+    height: 70px;
+    background: #ff0000;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding-left: 5px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.client-card-link:hover .play-button-red {
+    transform: scale(1.1);
+    background: #cc0000; 
+}
+
+.client-card-link:hover .play-overlay {
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.client-text-link {
+    text-decoration: none;
+    color: inherit;
+}
+.client-text-link:hover h3 {
+    text-decoration: underline;
+}
+
+/* Sembunyikan semua galeri secara lalai */
+.gallery-section {
+    display: none;
+}
+
+/* Paparkan sebagai grid hanya untuk seksyen yang aktif sahaja */
+.gallery-section.active-section {
+    display: grid !important;
+}
+
+/* =======================================================
+   6. SEKSYEN KEEMPAT: CONTACT ME & FORM (SOLID MAROON)
+   ======================================================= */
+.contact-section {
+    background-color: #faf5ee; 
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 5rem;
+    color: #CB812D; 
+    font-family: 'Arial Black', sans-serif !important; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: normal !important; 
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    color: #7a8fa6;
+    margin-bottom: 40px;
+    font-family: 'Arial', 'Helvetica', sans-serif !important; 
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.contact-form-box {
+    background-color: #4a1515; 
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #1e293b;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+    font-family: 'FuturaCustom', 'Arial Black', sans-serif !important; 
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    box-shadow: 0 0 0 3px rgba(203, 129, 45, 0.5);
+}
+
+.btn-send {
+    background-color: #CB812D;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease;
+    text-align: center;
+    font-family: 'FuturaCustom', 'Arial Black', sans-serif !important;
+}
+
+.btn-send:hover {
+    background-color: #e59334;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-send:active {
+    transform: translateY(0px);
+}
+
+/* =======================================================
+   7. SEKSYEN TERAKHIR: FOOTER (MINIMALIS & IKON PUTIH)
+   ======================================================= */
+.footer-section {
+    background-color: #4a1515; 
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 40px 0 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-icon-link img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.footer-icon-link:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer-section p {
+    color: #faf5ee;           
+    font-size: 13px; 
+    letter-spacing: 0.5px;
+    margin: 0;
+    opacity: 0.6;
+    font-family: 'Arial', 'Helvetica', sans-serif !important;
+    font-weight: normal !important;
+}
+
+/* =======================================================
+   8. MEDIA QUERIES RESPONSIVE (SISTEM HAMBURGER MENU)
+   ======================================================= */
+
+/* Butang Hamburger (Asal 3 Baris) */
+.hamburger-toggle {
+    display: none; /* Sorokkan dulu pada desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+    padding: 0;
+}
+
+/* 3 Garisan Asal Di Dalam Butang */
+.hamburger-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF; /* Warna putih garis hamburger */
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .portfolio-page .page-title, .contact-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 20px 25px !important;
+    }
+
+    .navbar {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    /* PAPARKAN HAMBURGER DI SEBELAH KIRI */
+    .hamburger-toggle {
+        display: flex !important; /* Munculkan ikon di mobile */
+    }
+
+    /* SISTEM ANIMASI JADI PANGKAH 'X' BILA MENU AKTIF */
+    .hamburger-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger-toggle.active span:nth-child(2) {
+        opacity: 0; /* Sorok garisan tengah */
+    }
+    .hamburger-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* LOGO KEKAL DI SEBELAH KANAN */
+    .logo-img {
+        height: 40px !important;
+    }
+
+    /* SOROK MENU ASAL & TUKAR JADI SIDEBAR LACI LUNCUR */
+    .navbar .nav-buttons {
+        position: fixed !important;
+        top: 0 !important;
+        left: -300px !important; /* Sorok ke luar skrin belah kiri */
+        width: 260px !important;
+        height: 100vh !important;
+        background-color: #4a1515 !important; /* Warna maroon pekat */
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding-top: 100px !important;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.5) !important;
+        transition: left 0.3s ease-in-out !important;
+        z-index: 1001 !important;
+        flex-wrap: nowrap !important; /* Kekalkan satu baris menegak */
+    }
+
+    /* BILA MENU AKTIF (DIKLIK), IA AKAN MELUNCUR MASUK */
+    .navbar .nav-buttons.active {
+        left: 0 !important;
+    }
+
+    /* Jadikan butang di dalam menu menegak & cantik */
+    .btn-nav {
+        width: 80% !important;
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+
+    /* Susun Atur Kad Contact */
+    .contact-card-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-page .page-title, .contact-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-page {
+        padding: 40px 5% 40px 5%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+        width: 95%;
+    }
+}
+
+
+
+
+
+/* --- SCROLL TO TOP BUTTON --- */
+#scrollToTopBtn {
+    display: none; /* Sembunyikan dulu secara default */
+    position: fixed; /* Lock kedudukan pada skrin */
+    bottom: 30px; /* Jarak dari bawah skrin */
+    right: 30px; /* Jarak dari kanan skrin */
+    z-index: 99; /* Pastikan dia duduk paling atas dari content lain */
+    border: none;
+    outline: none;
+    background-color: #4a1515; /* Tukar kod warna ni kalau nak tukar warna button */
+    color: white; /* Warna anak panah */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Buat button jadi bulat */
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Kesan bila letak cursor atas button */
+#scrollToTopBtn:hover {
+    background-color: #631d1d; /* Warna bertukar cerah sikit bila hover */
+    transform: scale(1.1); /* Besarkan sikit button bila hover */
+}
+
+
+
+
+/* =======================================================
+   9. KASIL KAD TIKTOK EMBED (KHAS)
+   ======================================================= */
+
+.video-container-custom {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #000;
+    cursor: pointer;
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+.video-embed {
+    width: 100%;
+    height: 100%;
+}
+.card-video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: auto;
+    
+    /* Cuba nilai 1.05 dulu. Kalau masih nampak scrollbar, baru tambah sikit demi sikit jadi 1.06, 1.07 */
+    transform: scale(1.03); 
+    
+    /* Pastikan dia zoom dari tengah */
+    transform-origin: center; 
+}
+
+
+.card-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.card-video-wrapper a:hover .play-overlay {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+
+
+.card-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #000;
+    overflow: hidden;
+}
+
+.play-button-red {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: #FF0000; /* Warna merah YouTube */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding-left: 5px; /* Untuk adjust supaya nampak betul-betul di tengah */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Effect hover: Butang membesar sikit bila kursor atas kad */
+.portfolio-card:hover .play-button-red {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: #cc0000;
+}
